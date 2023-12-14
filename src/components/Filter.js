@@ -5,7 +5,7 @@ import { useContext } from 'react'
 
 function Filter() {
 
-    const {setDropFil, theme} = useContext(SearchContext)
+    const {dropFil, setDropFil, theme} = useContext(SearchContext)
 
     const dropDwnFunc = () => {
         const dropDwn = document.querySelector(".dropDwn")
@@ -27,9 +27,11 @@ function Filter() {
         }
     }
 
+    console.log(dropFil)
+
     const regions = ['Africa','America','Asia','Europe','Oceania']
     const liBuild = regions.map((region, key) => {
-        return <li key={key} onClick={liClickHandler}>{region}</li>
+        return <li className={`${region.toLowerCase() === dropFil ? 'liBlue' : ''}`} key={key} onClick={liClickHandler}>{region}</li>
     })
     
     return (
