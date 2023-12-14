@@ -1,0 +1,61 @@
+@use './colors.scss';
+@use './font.scss';
+
+.Filter {
+    margin: 2rem 1rem 2rem 1rem;
+    position: relative;
+
+    button {
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem 1.2rem;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        @include font.fontSemiBld;
+        filter: drop-shadow(0px 5px 10px #3d3d3d3d);
+        
+        img {
+            width: 1rem;
+            margin: 0 0 0 3rem;
+        }
+    }
+}
+
+.dropDwn {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    padding: 1rem 0 1rem 1.5rem;
+    width: 11.1rem;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0px 5px 10px #3d3d3d3d);
+    z-index: 1;
+
+    li {
+        list-style-type: none;
+        padding: 0.2rem 0;
+        font-size: 14px;
+        @include font.fontSemiBld;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.liBlue {
+    color: rgb(0, 89, 255) !important;
+    filter: brightness(200%) blur(0.4px);
+}
+
+.light {
+    @include colors.lightMode();
+}
+
+.darkFilter {
+    @include colors.darkMode();
+    img {
+        filter: invert(1)
+    }
+}

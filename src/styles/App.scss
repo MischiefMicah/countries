@@ -1,0 +1,22 @@
+@use './colors.scss';
+
+.App {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.lightApp {
+    background-color: colors.$lgtMdBg;
+}
+
+.darkApp {
+    background-color: colors.$drkMdBg;
+}
+
+.light {
+    @include colors.lightMode();
+}
+
+.dark {
+    @include colors.darkMode();
+}

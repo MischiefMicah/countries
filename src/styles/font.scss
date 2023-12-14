@@ -1,0 +1,14 @@
+@mixin fontReg() {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+
+@mixin fontSemiBld() {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+@mixin fontExBld() {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}

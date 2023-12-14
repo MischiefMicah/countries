@@ -1,0 +1,44 @@
+.Search {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.Search input {
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1.2rem;
+  text-indent: 3.5rem;
+  background-position: 2rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  filter: drop-shadow(0px 5px 10px rgba(61, 61, 61, 0.2392156863));
+}
+
+.lightSearch {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 52%);
+  background-image: url(./icons/search-outline.svg);
+}
+
+.darkSearch {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  background-image: url(./icons/search-outline-dark.svg);
+}
+
+@media (min-width: 700px) {
+  .Search {
+    width: 40%;
+    justify-content: normal;
+    margin: 2rem 0;
+  }
+  .Search input {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Search.css.map */
