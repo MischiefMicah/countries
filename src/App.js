@@ -19,7 +19,7 @@ function App() {
         <SearchContext.Provider value={{inputTxt, setInputTxt, dropFil, setDropFil, theme, setTheme}}>
           <Nav />
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/countries/' element={<Home />} />
             <Route path='/card/:country' element={<CardDetail />} />
           </Routes>
         </SearchContext.Provider>

@@ -43,7 +43,7 @@ function CardDetail() {
     }
     return (
         <div className={`CardDetail ${theme === 'light' ? 'lightCardDetail' : 'darkCardDetail'}`}>
-            <button className={`${theme === 'light' ? 'light' : 'darkButton'}`} onClick={() => {navigate('/')}}><img src={backSVG} alt='Back arrow'/>Back</button>
+            <button className={`${theme === 'light' ? 'light' : 'darkButton'}`} onClick={() => {navigate('/countries/')}}><img src={backSVG} alt='Back arrow'/>Back</button>
             <div className='desktop-main-wrap'>
                 <div className='deFlag'><img  src={data.flags.svg} alt={`${data.name}'s' flag`}/></div>
                 <div className='desktop-details-wrap'>
