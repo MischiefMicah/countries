@@ -4,7 +4,7 @@ import Home from './components/Home'
 import CardDetail from './components/CardDetail'
 import { SearchContext } from './contexts/SearchContext'
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 
 function App() {
@@ -14,17 +14,17 @@ function App() {
   const [theme, setTheme] = useState('light')
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className={`App ${theme === 'light' ? 'lightApp' : 'darkApp'}`}>
         <SearchContext.Provider value={{inputTxt, setInputTxt, dropFil, setDropFil, theme, setTheme}}>
           <Nav />
           <Routes>
-            <Route path='/countries/' element={<Home />} />
+            <Route path='/' element={<Home />} />
             <Route path='/card/:country' element={<CardDetail />} />
           </Routes>
         </SearchContext.Provider>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
