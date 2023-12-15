@@ -3,6 +3,32 @@
   height: 100%;
 }
 
+.watermark {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.watermark a {
+  color: rgb(0, 89, 255) !important;
+  filter: brightness(200%) blur(0.4px);
+}
+.watermark a :link {
+  color: rgb(0, 89, 255) !important;
+  filter: brightness(200%) blur(0.4px);
+}
+.watermark a :visited {
+  color: rgb(0, 89, 255) !important;
+  filter: brightness(200%) blur(0.4px);
+}
+.watermark a :hover {
+  color: rgb(0, 89, 255) !important;
+  filter: brightness(200%) blur(0.4px);
+}
+.watermark a :active {
+  color: rgb(0, 89, 255) !important;
+  filter: brightness(200%) blur(0.4px);
+}
+
 .lightApp {
   background-color: hsl(0, 0%, 98%);
 }

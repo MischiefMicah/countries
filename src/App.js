@@ -23,6 +23,7 @@ function App() {
             <Route path='/card/:country' element={<CardDetail />} />
           </Routes>
         </SearchContext.Provider>
+        <footer className={`watermark ${theme === 'light' ? 'light' : 'dark'}`}>Coded by: <a href='https://github.com/MischiefMicah' target='_blank'>Micah Flanery</a></footer>
       </div>
     </HashRouter>
   );
