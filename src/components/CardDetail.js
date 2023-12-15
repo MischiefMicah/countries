@@ -53,11 +53,11 @@ function CardDetail() {
                         <div className='dePop'>Population: <span>{numCommas(data.population)}</span></div>
                         <div className='deReg'>Region: <span>{data.region}</span></div>
                         <div className='deSubReg'>Sub Region: <span>{data.subregion}</span></div>
-                        <div className='deCap'>Capital: <span>{data.capital}</span></div>
+                        <div className='deCap'>Capital: <span>{data.capital != undefined ? data.capital : 'No Capital'}</span></div>
                     </div>
                     <div className='deBot'>
                         <div className='deDom'>Top Level Domain: <span>{data.topLevelDomain}</span></div>
-                        <div className='deCurr'>Currencies: <span>{mapData(data.currencies)}</span></div>
+                        <div className='deCurr'>Currencies: <span>{data.currencies != undefined ? mapData(data.currencies) : 'No Currencies'}</span></div>
                         <div className='deLang'>Languages: <span>{mapData(data.languages)}</span></div>
                     </div>
                     {data.borders === undefined ? console.log('no borders') : deBorders(data.borders, allData)}

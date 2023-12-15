@@ -53,7 +53,7 @@ function Cards() {
                                 Region: <span>{data.region}</span>
                             </div>
                             <div className="cardCap">
-                                Capital: <span>{data.capital}</span>
+                                Capital: <span>{data.capital != undefined ? data.capital : 'No Capital'}</span>
                             </div>
                         </div>
                     )
